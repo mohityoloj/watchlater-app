@@ -1,0 +1,50 @@
+/* Highlight animation for new cards */
+.new-card {
+  animation: fadeIn 0.6s ease-out, glowPulse 1.4s ease-out;
+  border-color: #ff6b6b !important;
+  box-shadow: 0 0 12px rgba(255, 107, 107, 0.6);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 0 rgba(255, 107, 107, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(255, 107, 107, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 107, 107, 0.0);
+  }
+}
+
+
+@keyframes highlight {
+  0% {
+    background-color: #fff3cd;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* "New" badge styling */
+.badge-new {
+  background: #ff4757;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-left: 8px;
+  font-weight: 600;
+}
